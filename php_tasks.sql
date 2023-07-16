@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2020 at 06:24 PM
+-- Generation Time: Jul 14, 2023 at 06:24 PM
 -- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.6
+-- PHP Version: 7.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `task_manager`
+-- Database: `php_tasks`
 --
 
 -- --------------------------------------------------------
@@ -63,13 +63,13 @@ CREATE TABLE `tbl_tasks` (
 --
 
 INSERT INTO `tbl_tasks` (`task_id`, `task_name`, `task_description`, `list_id`, `priority`, `deadline`) VALUES
-(2, 'icon Design', '                        This is urgent                         ', 1, 'High', '2020-06-03'),
-(3, 'Buy Things', 'Okay Buy                      ', 3, 'Medium', '2020-06-12'),
-(4, 'Web Page Design', 'All the Tasks for Web Page Design', 1, 'Medium', '2020-06-11'),
-(5, 'Application Development', 'All the tasks', 1, 'Low', '2020-07-03'),
-(6, 'SEO', 'Search Engine Optimization', 2, 'Medium', '2020-06-19'),
-(7, 'Desktop Application Development', 'This is Important', 3, 'Low', '2020-06-26'),
-(8, '4K Monitor', 'For Video Editing', 1, 'Medium', '2020-06-18');
+(2, 'icon Design', '                        This is urgent                         ', 1, 'High', '2023-07-27'),
+(3, 'Buy Things', 'Okay Buy                      ', 3, 'Medium','2023-07-27'),
+(4, 'Web Page Design', 'All the Tasks for Web Page Design', 1, 'Medium', '2023-07-27'),
+(5, 'Application Development', 'All the tasks', 1, 'Low', '2023-07-27'),
+(6, 'SEO', 'Search Engine Optimization', 2, 'Medium', '2023-07-27'),
+(7, 'Desktop Application Development', 'This is Important', 3, 'Low', '2023-07-27'),
+(8, '4K Monitor', 'For Video Editing', 1, 'Medium', '2023-07-27'),
 
 --
 -- Indexes for dumped tables

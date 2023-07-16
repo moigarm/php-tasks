@@ -7,7 +7,7 @@
 
 <html>
     <head>
-        <title>Task Manager with PHP and MySQL</title>
+        <title>PHP Tasks with MySQL</title>
         <link rel="stylesheet" href="<?php echo SITEURL; ?>css/style.css" />
     </head>
     
@@ -15,7 +15,7 @@
         
         <div class="wrapper">
         
-        <h1>TASK MANAGER</h1>
+        <h1>PHP TASKS</h1>
         
         <!-- Menu Starts Here -->
         <div class="menu">

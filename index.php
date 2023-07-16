@@ -5,7 +5,7 @@
 <html>
 
     <head>
-        <title>Task Manager with PHP and MySQL</title>
+        <title>PHP Tasks with MySQL</title>
         <link rel="stylesheet" href="<?php echo SITEURL; ?>css/style.css" />
     </head>
     
@@ -13,7 +13,7 @@
     
     <div class="wrapper">
     
-    <h1>TASK MANAGER</h1>
+    <h1>PHP TASKS</h1>
     
     
     <!-- Menu Starts Here -->
@@ -23,7 +23,6 @@
         
         <?php 
             
-            //Comment Displaying Lists From Database in ourMenu
             $conn2 = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error());
             
             //SELECT DATABASE
@@ -35,7 +34,7 @@
             //Execute Query
             $res2 = mysqli_query($conn2, $sql2);
             
-            //CHeck whether the query executed or not
+            //Check whether the query executed or not
             if($res2==true)
             {
                 //Display the lists in menu
@@ -53,14 +52,8 @@
             }
             
         ?>
-        
-        
-        
         <a href="<?php echo SITEURL; ?>manage-list.php">Manage Lists</a>
     </div>
-    <!-- Menu Ends Here -->
-    
-    <!-- Tasks Starts Here -->
     
     <p>
         <?php 
@@ -138,7 +131,7 @@
                         while($row=mysqli_fetch_assoc($res))
                         {
                             $task_id = $row['task_id'];
-                            $task_name = $row['task_name'];
+                            $task_name = strtoupper($row['task_name']);
                             $priority = $row['priority'];
                             $deadline = $row['deadline'];
                             ?>
@@ -174,13 +167,9 @@
             
             ?>
             
-            
-        
         </table>
     
     </div>
-    
-    <!-- Tasks Ends Here -->
     </div>
     </body>
 

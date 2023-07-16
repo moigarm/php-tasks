@@ -6,7 +6,7 @@ include('config/constants.php');
 
 <html>
     <head>
-        <title>Task Manager with PHP and MySQL</title>
+        <title>PHP Tasks with MySQL</title>
         <link rel="stylesheet" href="<?php echo SITEURL; ?>css/style.css" />
     </head>
     
@@ -14,7 +14,7 @@ include('config/constants.php');
         
         <div class="wrapper">
         
-        <h1>TASK MANAGER</h1>
+        <h1>PHP TASKS</h1>
         
         
         <a class="btn-secondary" href="<?php echo SITEURL; ?>">Home</a>
